@@ -140,23 +140,18 @@ a:hover{
     min-height: 50vh;
     background-color:#000000;
  }
- .email-hide{
-    display: none;
- }
-.email:hover +.email-hide{
-   display: block;
-   color:white;
-   cursor: pointer;
-  }
 
 
-  @keyframes blink {
+
+@keyframes blink {
     0% { opacity: 1; }
+    30%{ opacity: 0.3; }
     50% { opacity: 0; }
+    60% { opacity: 0.1; }
+    75% { opacity: 0.5; }
     100% { opacity: 1; }
 }
-
 /* Apply the animation to the element with the "blink-text" class */
 .blink-text {
-    animation: blink 1s infinite; /* Infinite blinking animation */
+    animation: blink 2s infinite; /* Infinite blinking animation */
 }
